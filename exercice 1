@@ -1,0 +1,28 @@
+using System;
+
+namespace practice
+{
+    class MainClass
+    {
+        public class SuperHero
+        {
+            string name;
+            string superpower;
+            string type;
+            public SuperHero(string Name, string Superpower, string Type)
+            {
+                name = Name;
+                superpower = Superpower;
+                type = Type;
+            }
+        }
+        public static void Main(string[] args)
+        {
+            SuperHero Superman = new SuperHero("Superman", "flying", "aliens");
+            SuperHero Spiderman = new SuperHero("Spiderman", "Super Senses", "human");
+            SuperHero Wolverine = new SuperHero("Wolverine", "Regenerative Power ", "human");
+            SuperHero flash = new SuperHero("Flash", "Super Speed", "human");
+            SuperHero SandMan = new SuperHero("Sand Man", "Shape shifting", "mutant");
+        }
+    }
+}
